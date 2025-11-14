@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For My Brother — Happy Married Life</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg1: #eea0d5;
+      --accent: #0c9bc2; 
+      --muted: #040404;
+      --card-shadow: 0 14px 40px rgba(17, 34, 39, 0.08);
+      --radius: 20px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,var(--bg1),#ffffff);color:#111}
+
+    .wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:36px}
+
+    .card{width:min(980px,94%);background:linear-gradient(180deg,rgba(255,255,255,0.96),rgba(255,255,255,0.9));border-radius:var(--radius);box-shadow:var(--card-shadow);display:grid;grid-template-columns:420px 1fr;overflow:hidden;position:relative}
+
+    
+    .hero{background:linear-gradient(180deg, rgba(194,65,12,0.04), rgba(0,0,0,0.01));padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px}
+
+    .photo{width:100%;height:340px;border-radius:16px;background:#fafafa;display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid rgba(0,0,0,0.04)}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+    .caption{font-size:13px;color:var(--muted);text-align:center}
+    .content{padding:34px 38px;display:flex;flex-direction:column;gap:12px}
+    .headline{font-family:'Playfair Display', serif;font-size:20px;color:#0f172a;margin:0}
+    .sub{color:var(--muted);font-size:14px}
+
+    .quote-box{margin-top:8px;padding:20px;border-radius:14px;background:linear-gradient(90deg,rgba(194,65,12,0.03),rgba(59,130,246,0.02));border:1px solid rgba(194,65,12,0.06);font-style:italic}
+    .quote{font-size:18px;color:#1f2937;margin:0}
+    .author{font-weight:700;margin-top:12px;color:#111}
+
+    .meta{display:flex;gap:14px;align-items:center;margin-top:18px}
+    .date-pill{background:linear-gradient(180deg,#af9f5e,#fff7ed);padding:10px 14px;border-radius:12px;font-weight:700;color:#92400e;border:1px solid rgba(0,0,0,0.04)}
+
+    .message{margin-top:14px;color:#374151;line-height:1.7}
+
+    .footer{margin-top:auto;display:flex;align-items:center;gap:12px}
+    .signature{font-size:13px;color:var(--muted)}
+
+    .ribbon{position:absolute;left:-80px;top:-40px;width:220px;height:220px;background:linear-gradient(135deg, rgba(194,65,12,0.12), rgba(249,115,22,0.06));transform:rotate(-18deg);filter:blur(12px);border-radius:28px}
+    .ribbon-2{position:absolute;right:-80px;bottom:-40px;width:240px;height:240px;background:linear-gradient(135deg, rgba(99,102,241,0.10), rgba(99,102,241,0.03));transform:rotate(28deg);filter:blur(12px);border-radius:28px}
+
+    @media (max-width:880px){
+      .card{grid-template-columns:1fr}
+      .photo{height:260px}
+      .content{padding:20px}
+    }
+
+
+    @media print{
+      body,html{background:white}
+      .wrap{padding:0}
+      .card{box-shadow:none;border-radius:6px;width:100%;margin:0}
+      .ribbon,.ribbon-2{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="article" aria-label="Brother wedding greeting card">
+
+      <div class="hero">
+        <div class="photo">
+          <img src="Screenshot 2025-11-14 182719.png" alt="Brother wedding photo">
+        </div>
+
+        <div class="caption"><h1>𝑨𝒃𝒉𝒊𝒔𝒉𝒆𝒌 𝒂𝒏𝒅 𝑺𝒂𝒔𝒎𝒊𝒕𝒂</h1>  </div>
+      </div>
+
+      <div class="content">
+        <h1 class="headline">Happy Married Life To You ...</h1>
+        <div class="sub"><em>Marriage is a journey of two hearts becoming one. Wishing you a life filled with peace, trust, and endless affection.</em></div>
+
+        <div class="quote-box">
+          <p class="quote">"A beautiful marriage begins with two people who choose each other every single day. May your love remain pure, your hearts stay connected, and your souls always find peace in one another. Brother and Sister-in-Law, may your life together be filled with moments that become cherished memories and dreams that turn into reality."</p>
+          <div class="author">— Wishing you both a lifetime of happiness</div>
+        </div>
+
+        <div class="meta">
+          <div class="date-pill">14 December 2025</div>
+          
+        </div>
+
+        <p class="message">Dear brother, as you begin this beautiful journey with your partner, may every day bring you closer, every challenge make you stronger, and every joy be shared. I am proud of you and excited for the life you'll build together.</p>
+
+        <div class="footer">
+          <div class="signature">With love <strong> - <em> Soumya Ranjan & His Friends with family</em></strong></div>
+          <div style="flex:1"></div>
+          <div style="font-size:12px;color:var(--muted)">November 14, 2025</div>
+        </div>
+
+      </div>
+
+      <div class="ribbon" aria-hidden="true"></div>
+      <div class="ribbon-2" aria-hidden="true"></div>
+
+    </div>
+  </div>
+
+
+</body>
+</html>
